@@ -23,7 +23,7 @@ function ProductCard({product}){
                         </div>
                         <p className="card_description">{description}</p>
                         <div className="card__delivery">
-                        <Link to="product-detail" onClick={()=> setCurrentProduct(product)}>Order a delivery</Link>
+                        <Link to="product-detail" className="deliver-link" onClick={()=> setCurrentProduct(product)}>Order a delivery</Link>
                         <img src={deliveryVan} alt="delivery van" className="delivery-icon" />
                         </div>
 
